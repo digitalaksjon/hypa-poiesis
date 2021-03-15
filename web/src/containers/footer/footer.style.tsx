@@ -71,7 +71,7 @@ export const FooterCol = styled.div`
 `;
 
 export const Logo = styled.div`
-	width: 25%;
+	width: 40%;
 	display: flex;
 	align-items: center;
 	margin-bottom: 15px;

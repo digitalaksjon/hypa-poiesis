@@ -18,7 +18,7 @@ import HeaderWrapper, {
 	NavSearchFromWrapper,
 	SocialProfileWrapper,
 } from './navbar.style';
-import logoImage from '../../images/logo.svg';
+import logoImage from '../../images/logo-with-arms-shadow.png';
 
 import { IoLogoFacebook, IoLogoTwitter, IoLogoInstagram } from 'react-icons/io';
 
@@ -102,22 +102,7 @@ const Navbar: React.FunctionComponent<NavbarProps> = ({
 							<img src={logoImage} alt='logo' />
 						</Link>
 					</Logo>
-
-					<MenuWrapper>
-						<Menu items={MenuItems} />
-					</MenuWrapper>
-
-					<NavSearchButton
-						type='button'
-						aria-label='search'
-						onClick={toggleHandle}
-					>
-						<IoIosSearch size='23px' />
-					</NavSearchButton>
-
-					<SocialProfileWrapper>
-						<SocialProfile items={SocialLinks} />
-					</SocialProfileWrapper>
+					
 				</TopBarWrapper>
 				<NavSearchWrapper className={state.toggle === true ? 'expand' : ''}>
 					<NavSearchFromWrapper>

@@ -84,8 +84,9 @@ const Footer: React.FunctionComponent<FooterProps> = ({
           </Logo>
 
           <Infos>
-            Copyright 2021 &copy;&nbsp;
-            <a href="https://redq.io/" target="_blank">
+            Copyright 2021 &copy;&nbsp; 
+            
+            <a href="https://hypapoiesis.io/" target="_blank">
               {' '}
               Hypa Poiesis
             </a>

@@ -126,7 +126,7 @@ const ResetCSS = createGlobalStyle`
 
   .nav-sticky{
     .header {
-      box-shadow: 0 0 15px rgba(0,0,0,.08);
+
       .navbar{
         @media (min-width: 1400px) {
           padding-top: 25px;

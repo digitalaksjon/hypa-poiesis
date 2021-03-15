@@ -2,25 +2,24 @@ import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
 
 const HeaderWrapper = styled.header`
-  background-color: #fff;
+
   position: relative;
-  display:none;
+
   z-index: 99999;
   transition: 0.25s ease-in-out;
-  border-bottom: 1px solid ${themeGet('colors.borderColor', '#DBDBDB')};
 `;
 
 export const HeaderTop = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+
 `;
 
 export const TopBarWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff;
+
   transition: 0.25s ease-in-out;
   width: 1385px;
   padding: 25px 15px;
@@ -45,18 +44,16 @@ export const MobileMenu = styled.div`
 `;
 
 export const Logo = styled.div`
-  width: 150px;
+  width: 500px;
   margin-left: auto;
-  margin-right: 40px;
+  margin-right: auto;
   flex-shrink: 0;
-  @media (max-width: 1024px) {
-    margin-right: 25px;
-  }
+
   @media (max-width: 767px) {
     margin-right: auto;
   }
   @media (max-width: 460px) {
-    max-width: 100px;
+    max-width: 200px;
   }
   img {
     display: block;

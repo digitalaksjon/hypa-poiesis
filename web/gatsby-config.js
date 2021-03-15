@@ -91,11 +91,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `StoryHub - Tinder Blog`,
-        short_name: `StoryHub`,
+        name: `Hypa Poiesis - Theoria, Poiesis, Praxis`,
+        short_name: `Hypa Poiesis`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#2E688C`,
         display: `minimal-ui`,
         icon: `content/assets/favicon.png`,
       },
@@ -124,7 +124,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-preload-fonts`,
       options: {
         fonts: [
           {
