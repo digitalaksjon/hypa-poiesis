@@ -3,7 +3,7 @@ title: I do not know the question but sex is definitely the answer
 date: '2020-02-22'
 description: An Essay on Typography by Eric Gill takes the reader back to the year 1930. The year when a conflict between two worlds came to its term. The machines of the industrial world finally took over the handicrafts.
 tags: ['dating', 'travel', 'trending']
-categories: ['dating']
+categories: ['Interview', 'Ecology']
 cover: './preview.jpg'
 ---
 

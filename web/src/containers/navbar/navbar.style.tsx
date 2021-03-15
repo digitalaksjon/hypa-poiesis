@@ -94,10 +94,10 @@ export const MenuItem = styled.li`
       padding: 5px;
     }
     &:hover {
-      color: ${themeGet('colors.primary', '#FF2E55')};
+      color: ${themeGet('colors.primary', '##f0604c')};
     }
     &.active-link {
-      color: ${themeGet('colors.primary', '#FF2E55')};
+      color: ${themeGet('colors.primary', '#f0604c')};
     }
   }
 `;
@@ -117,7 +117,7 @@ export const NavSearchButton = styled.button`
     display: block;
   }
   &:hover {
-    color: ${themeGet('colors.primary', '#FF2E55')};
+    color: ${themeGet('colors.primary', '#f0604c')};
   }
 `;
 
@@ -351,7 +351,7 @@ export const HamburgerIcon = styled.div`
   justify-content: center;
   cursor: pointer;
   &:hover {
-    color: ${themeGet('colors.primary', '#FF2E55')};
+    color: ${themeGet('colors.primary', '#f0604c')};
   }
   span {
     display: block;

@@ -2,7 +2,7 @@
 title: Love and compassion are necessities but not luxuries Without them humanity cannot survive
 date: '2019-12-30'
 cover: './preview.jpg'
-categories: ['travel']
+categories: ['Music','Composition']
 tags: ['beauty', 'makeup']
 ---
 

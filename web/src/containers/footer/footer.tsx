@@ -10,7 +10,7 @@ import FooterWrapper, {
   FooterContent,
   Menu,
 } from './footer.style';
-import LogoImage from '../../images/logo.svg';
+import LogoImage from '../../images/logo.png';
 
 import {
   IoLogoFacebook,
@@ -83,14 +83,11 @@ const Footer: React.FunctionComponent<FooterProps> = ({
             </Link>
           </Logo>
 
-          <Infos>23 King Street, 5th Avenue, New York</Infos>
-          <Infos>+1-2345-6789-9</Infos>
-          <br />
           <Infos>
-            Copyright &copy;&nbsp;
+            Copyright 2021 &copy;&nbsp;
             <a href="https://redq.io/" target="_blank">
               {' '}
-              RedQ, Inc.
+              Hypa Poiesis
             </a>
           </Infos>
         </FooterCol>

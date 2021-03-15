@@ -62,7 +62,7 @@ export const SocialProfileItem = styled.li`
 		display: block;
 		transition: all 0.25s;
 		&:hover {
-			color: ${themeGet('colors.primary', '#FF2E55')};
+			color: ${themeGet('colors.primary', '#f0604c')};
 		}
 		svg {
 			display: block;

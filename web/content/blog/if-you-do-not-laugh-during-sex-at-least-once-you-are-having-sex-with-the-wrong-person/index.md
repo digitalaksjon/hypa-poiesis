@@ -3,7 +3,7 @@ title: If you do not laugh during sex at least once you are having sex with the 
 date: '2020-05-20'
 cover: './preview.jpg'
 tags: ['entertainment', 'trending']
-categories: ['entertainment']
+categories: ['Photos', 'Deep Ocean']
 slug: 'if-you-do-not-laugh-during'
 ---
 

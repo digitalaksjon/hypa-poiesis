@@ -107,7 +107,7 @@ export const PostCategory = styled.span`
 	}
 	a {
 		font-size: 12px;
-		background-color: ${themeGet('primary', '#FF2E55')};
+		background-color: ${themeGet('primary', '#f0604c')};
 		font-weight: ${themeGet('fontWeights.6', '700')};
 		text-transform: uppercase;
 		color: ${themeGet('white', '#FFFFFF')};
@@ -281,7 +281,7 @@ export const PostDescription = styled.div`
 	a {
 		font-weight: 500;
 		transition: 0.15s ease-in-out;
-		color: ${themeGet('primary', '#D10068')};
+		color: ${themeGet('primary', '##f0604c')};
 	}
 `;
 
@@ -296,6 +296,6 @@ export const PostTags = styled.div`
 		margin-right: 30px;
 		font-size: 14px;
 		font-weight: 400;
-		color: ${themeGet('primary', '#D10068')};
+		color: ${themeGet('primary', '##f0604c')};
 	}
 `;

@@ -3,7 +3,7 @@ title: Love you will find only where you may show yourself weak without provokin
 date: '2020-01-30'
 cover: './preview.jpg'
 tags: ['beauty', 'makeup', 'lifestyle', 'litan']
-categories: ['Travel']
+categories: ['Recommendation', 'Mette Rasmussen']
 ---
 
 Wow! I love blogging so much already.

@@ -59,7 +59,7 @@ export const PostPreviewArea = styled('div')<ColorProps>`
 		background-color: ${(props) =>
 			props.postColor
 				? props.postColor
-				: themeGet('colors.primary', '#FF2E55')};
+				: themeGet('colors.primary', '#f0604c')};
 	}
 `;
 export const PostPreview = styled.div`
@@ -188,7 +188,7 @@ export const PostCategory = styled('span')<ColorProps>`
 		background-color: ${(props) =>
 			props.categoryColor
 				? props.categoryColor
-				: themeGet('colors.primary', '#FF2E55')};
+				: themeGet('colors.primary', '#f0604c')};
 		font-weight: ${themeGet('fontWeights.6', '700')};
 		text-transform: uppercase;
 		color: ${themeGet('white', '#FFFFFF')};

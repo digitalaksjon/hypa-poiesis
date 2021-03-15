@@ -2,7 +2,7 @@
 title: A promiscuous person is a person who is getting more sex than you are
 date: '2020-04-05'
 cover: './preview.jpg'
-categories: ['travel']
+categories: ['Blogpost', 'Ocean cleanup']
 tags: ['travel', 'lifestyle']
 ---
 

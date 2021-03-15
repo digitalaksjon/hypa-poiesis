@@ -2,7 +2,7 @@
 title: Spread love everywhere you go Let no one ever come to you without leaving happier
 date: '2020-01-02'
 cover: './preview.jpg'
-categories: ['entertainment']
+categories: ['Podcast', 'Guro Skumsnes Moe']
 tags: ['entertainment', 'makeup', 'products']
 ---
 

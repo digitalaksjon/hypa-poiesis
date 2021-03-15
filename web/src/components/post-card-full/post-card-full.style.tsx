@@ -147,7 +147,7 @@ export const PostCategory = styled('span')<ColorProps>`
 		background-color: ${(props) =>
 			props.categoryColor
 				? props.categoryColor
-				: themeGet('colors.primary', '#FF2E55')};
+				: themeGet('colors.primary', '#f0604c')};
 		font-weight: ${themeGet('fontWeights.6', '700')};
 		text-transform: uppercase;
 		color: ${themeGet('white', '#FFFFFF')};
@@ -166,7 +166,7 @@ export const ReadMore = styled.div`
 		font-weight: 700;
 		color: ${themeGet('colors.white', '#ffffff')};
 		font-family: ${themeGet('fontFamily.1', "'Roboto', sans-serif")};
-		background-color: ${themeGet('colors.primary', '#FF2D54')};
+		background-color: ${themeGet('colors.primary', '#f0604c')};
 		text-transform: uppercase;
 		padding: 12px 25px;
 		display: inline-flex;

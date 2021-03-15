@@ -2,7 +2,7 @@
 title: Is An Open Relationship Right For You? 5 Things To Consider From Somebody Who Tried And Failed
 date: '2020-09-07'
 tags: ['makeup', 'products', 'litan']
-categories: ['Creativity', 'Ocean', 'Waves']
+categories: ['Live event','Stream','Music']
 cover: './preview.jpg'
 ---
 
