@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-starter-catalyst-sanity-studio",
+  "name": "hypa-poiesis-studio",
   "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "package.json",
-  "author": "Eric Howey <ehowey@gmail.com>",
+  "author": "Øyvind Brungot Dahl <post@digitalaksjon.no",
   "license": "MIT",
   "scripts": {
     "start": "sanity start",

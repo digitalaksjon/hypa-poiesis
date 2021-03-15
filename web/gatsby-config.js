@@ -1,96 +1,142 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
-    title: `Catalyst Sanity`,
-    description: `Speed up your GatsbyJS development workflow. Designed as a set of opinionated and advanced themes and starters using MDX and Theme-UI. Incorporates gatsby-theme-catalyst-core, gatsby-theme-catalyst-header-top, and gatsby-theme-catalyst-footer.`,
-    keywords: [`gatsby`, `theme`, `react`],
-    author: `Eric Howey`,
-    siteUrl: `https://gatsby-starter-catalyst-sanity.netlify.app`, //Change to you site address, required for sitemap.xml and robots.txt file among other things
-    menuLinks: [
-      {
-        name: `Page 1`,
-        link: `/page-1`,
-        type: `internal`, //internal or anchor
-      },
-    ],
-    socialLinks: [
-      {
-        name: `Email`,
-        link: `eric@erichowey.dev`,
-        location: `footer`, //Options are "all", "header", "footer"
-      },
-      {
-        name: `Twitter`,
-        link: `https://twitter.com/erchwy`,
-        location: `header`, //Options are "all", "header", "footer"
-      },
-      {
-        name: `Github`,
-        link: `https://www.github.com/ehowey`,
-        location: `all`, //Options are "all", "header", "footer"
-      },
-    ],
+    title: `StoryHub`,
+    author: `Monnisa`,
+    about: `Every company has a story to tell, so break out your storytelling skills from that random English class you took years ago and put them to work on your “About Us” page. Using descriptive and emotive copy and gorgeous graphics, an “About Us” page with a story works.`,
+    description: `A Gatsby Blog`,
+    siteUrl: `https://storyhub-agency-tarex.redq.now.sh/`,
   },
   plugins: [
     {
-      resolve: `gatsby-theme-catalyst-core`,
+      resolve: `gatsby-plugin-styled-components`,
       options: {
-        // Default options are:
-        // contentPath: `content/pages`,
-        // assetPath: `content/assets`,
-        // displaySiteLogo: true,
-        // displaySiteTitle: true,
-        // displaySiteLogoMobile: true,
-        // displaySiteTitleMobile: true,
-        // invertSiteLogo: false,
-        // useStickyHeader: false,
-        // useSocialLinks: true,
-        // useColorMode: true,
-        // useKatex: false, // Dark mode is not supported when configuring the theme from SANITY.io dashboard
-        // footerContentLocation: "left", // "left", "right", "center"
-        // remarkImagesWidth: 1440,
-        // imageQuality: 50,
+        minify: false, // Breaks styles if not set to false
       },
     },
-    `gatsby-theme-catalyst-header-top`, // Try `gatsby-theme-catalyst-header-side`
-    `gatsby-theme-catalyst-footer`,
     {
-      resolve: `gatsby-theme-catalyst-sanity`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        // Example for an env variable
-        // sanityProjectId: process.env.SANITY_PROJECT_ID,
-        // sanityDataset: process.env.SANITY_DATASET,
-        // sanityToken: process.env.SANITY_TOKEN,
-        //
-        // Default options are:
-        // sanityProjectId: "abc123" // Required
-        // sanityDataset: "production"
-        // sanityToken: null
-        // sanityWatchMode: true
-        // sanityOverlayDrafts: false // Token is required for this
-        // sanityCreatePages: true
-        // sanityCreatePosts: true
-        // sanityCreatePostsList: true
-        // sanityCreateProjects: true
-        // sanityCreateProjectsList: true
-        // sanityPostPath: "/posts"
-        // sanityProjectPath: "/projects"
-        // useSanityTheme: false // Experimental right now
-        sanityProjectId: "w6cd63nh",
-        sanityProjectDataset: "production",
+        path: `${__dirname}/content/blog`,
+        name: `blog`,
       },
     },
-
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/assets`,
+        name: `assets`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+              linkImagesToOriginal: true,
+            },
+          },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          {
+            resolve: `gatsby-remark-katex`,
+            options: {
+              // Add any KaTeX options from https://github.com/KaTeX/KaTeX/blob/master/docs/options.md here
+              strict: `ignore`,
+            },
+          },
+          {
+            resolve: `gatsby-remark-mermaid`,
+          },
+          {
+            resolve: `gatsby-remark-prismjs`,
+          },
+          {
+            resolve: `gatsby-remark-copy-linked-files`,
+          },
+          {
+            resolve: `gatsby-remark-smartypants`,
+          },
+          {
+            resolve: `gatsby-remark-reading-time`,
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-transformer-sharp`,
+    },
+    {
+      resolve: `gatsby-plugin-sharp`,
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        //trackingId:process.env.GOOGLE_ANALYTICS_TRACKING_ID,// `ADD YOUR TRACKING ID HERE`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-feed`,
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-catalyst-hydrogen`,
-        short_name: `catalyst`,
+        name: `StoryHub - Tinder Blog`,
+        short_name: `StoryHub`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#cccccc`,
+        theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/catalyst-site-icon.png`, // This path is relative to the root of the site.
+        icon: `content/assets/favicon.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+    },
+    {
+      resolve: `gatsby-plugin-react-helmet`,
+    },
+    {
+      resolve: `gatsby-plugin-lodash`,
+    },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: process.env.MAILCHIMP_ENDPOINT, // add your MC list endpoint here; see instructions below
+      },
+    },
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: process.env.INSTAGRAM_USER_NAME_ID,
+        access_token: process.env.INSTAGRAM_ACCESS_TOKEN,
+        instagram_id: process.env.INSTAGRAM_ID,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Poppins`,
+            variants: [`100`, `200`, `300`, `400`, `500`, `600`, `700`],
+          },
+          {
+            family: `Roboto`,
+            variants: [`100`, `300`, `400`, `500`, `600`, `700`],
+          },
+        ],
       },
     },
   ],
-}
+};
