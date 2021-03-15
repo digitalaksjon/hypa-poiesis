@@ -30,7 +30,7 @@ const IndexPage: React.FC<IndexPageProps> = (props) => {
   return (
     <Layout>
       <SEO
-        title="Tinder Blog"
+        title="Hypa Poiesis"
         description={data.site.siteMetadata.description}
       />
       <TinderBlog />
